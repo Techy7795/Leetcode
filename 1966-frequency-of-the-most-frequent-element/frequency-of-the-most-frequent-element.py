@@ -7,8 +7,6 @@ class Solution:
 
         for right in range(len(nums)):
             total += nums[right]
-            
-            # While the current window is invalid, shrink from the left
             while nums[right] * (right - left + 1) > total + k:
                 total -= nums[left]
                 left += 1
