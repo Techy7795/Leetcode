@@ -13,8 +13,3 @@ class Solution:
             for j in range(i[1]):
                 ures.append(i[0])
         return ures
-
-
-
-
-            
