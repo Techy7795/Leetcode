@@ -4,4 +4,3 @@ class Solution:
         c=Counter(nums)
         nums.sort(key = lambda x: (c[x],-x))
         return nums
-        
