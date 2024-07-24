@@ -1,5 +1,11 @@
 class Solution:
     def passThePillow(self, n: int, time: int) -> int:
+        quo = time // (n - 1)
+        mod = time % (n - 1)
+
+        if quo % 2 != 0:
+            return n - mod
+        return mod + 1
         
         cycle_length=(n-1)*2
         e_time=time%cycle_length
