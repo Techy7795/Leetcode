@@ -3,7 +3,7 @@ class Solution:
         from collections import Counter
         c=Counter(nums)
         l=[]
-        for i in sorted(list(set(nums))):
+        for i in sorted((set(nums))):
             for j in range(c[i]):
                 l.append(i)
         return l
