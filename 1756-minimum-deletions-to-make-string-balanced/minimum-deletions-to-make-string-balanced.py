@@ -5,7 +5,7 @@ class Solution:
             acr+=1 if i=="a" else 0
         bcl=0
         res=len(s)
-        for i ,c in enumerate(s):
+        for c in s:
             if c=="a":
                 acr-=1
             res=min(res,acr+bcl)
