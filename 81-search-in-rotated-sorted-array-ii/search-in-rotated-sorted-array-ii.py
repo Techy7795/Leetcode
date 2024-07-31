@@ -34,5 +34,5 @@ class Solution:
 
         return False
 
-        return target in nums
+        # return target in nums
         
