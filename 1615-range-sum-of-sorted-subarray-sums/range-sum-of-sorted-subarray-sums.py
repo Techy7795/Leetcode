@@ -9,4 +9,3 @@ class Solution:
                 sub.append(cur_sum)
         sub.sort()
         return sum(sub[left-1:right])%mod
-        
