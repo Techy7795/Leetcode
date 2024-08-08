@@ -17,8 +17,7 @@ class Solution:
             if extended[i] == 1:
                 current_ones_in_window += 1
             if i >= total_ones:
-                if extended[i - total_ones] == 1:
-                    current_ones_in_window -= 1
+                current_ones_in_window -= extended[i - total_ones]
             if i >= total_ones - 1:
                 max_ones_in_window = max(max_ones_in_window, current_ones_in_window)
 
