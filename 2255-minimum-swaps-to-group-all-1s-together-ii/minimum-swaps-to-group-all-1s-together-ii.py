@@ -8,8 +8,7 @@ class Solution:
             return 0
 
         # Extend the array to handle circular nature
-        extended = nums * 2
-
+        extended = nums*2
         max_ones_in_window = 0
         current_ones_in_window = 0
 
