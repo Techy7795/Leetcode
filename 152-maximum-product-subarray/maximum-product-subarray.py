@@ -1,8 +1,8 @@
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
-        n=len(nums)
-        if n==1:
-            return nums[0]
+        # n=len(nums)
+        # if n==1:
+        #     return nums[0]
         prod=1
         ma=float('-inf')
         for i in nums:
