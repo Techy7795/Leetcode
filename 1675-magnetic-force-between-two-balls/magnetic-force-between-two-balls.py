@@ -15,7 +15,7 @@ class Solution:
     def maxDistance(self, nums: List[int], m: int) -> int:
         nums.sort()
         low=1
-        high=max(nums)-min(nums)
+        high=(max(nums)-min(nums))//(m-1)
         while low<=high:
             mid=(low+high)//2
             if not self.ispossible(nums,mid,m):
