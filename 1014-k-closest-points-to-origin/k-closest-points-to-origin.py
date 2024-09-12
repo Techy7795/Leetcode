@@ -12,5 +12,5 @@ class Solution:
                 heapq.heappush(heap,curr)
             else:
                 heapq.heappushpop(heap,curr)
-        return [[heap[i][1],heap[i][2]] for i in range(k)]
+        return [[x,y] for d,x,y in heap]
         
