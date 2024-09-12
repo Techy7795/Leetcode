@@ -7,7 +7,7 @@ class Solution:
         import heapq
         heap=[]
         for x,y in points:
-            curr=[-dist(x,y),x,y]
+            curr=(-dist(x,y),x,y)
             if len(heap)<k:
                 heapq.heappush(heap,curr)
             else:
